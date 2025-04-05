@@ -8,7 +8,23 @@
     width: 100%;
     min-height: 100vh;
     background-image: url(../res/bg.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-size: cover;             /* Scales the image to cover the box */
+  background-position: center;  
+  background-repeat: no-repeat; 
+    position: relative;
+}
+
+.container {
+  width: 800px;
+  height: 180px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(144, 238, 144, 0.8);
+  z-index: 10; /* Make sure it's on top */
+  color: white; /* Optional for visibility */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
